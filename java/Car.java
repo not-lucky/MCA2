@@ -1,22 +1,17 @@
-public class Car {
-    // static void checkAge(int age) {
-    //   if (age < 18) {
-    //     throw new ArithmeticException("Access denied - You must be at least 18 years old.");
-    //   }
-    //   else {
-    //     System.out.println("Access granted - You are old enough!");
-    //   }
-    // }
-  
-    public static void main(String[] args) {
-        //   checkAge(15); // Set age to 15 (which is below 18...)
-        int a[] ={1,2,3,4};
-        Exception b = new Exception("uqwhjeojqwoej");
-        try {
-            a[10] = 10;
-        } catch (Exception E) {
-            System.out.println(b);
-            E.printStackTrace();
-        }
+class Info extends Object {
+    String name;
+    Info(String n) {
+        this.name = n;
     }
-  }
+
+    public String toString() {
+        return "Info: name=" + this.name;
+    }
+}
+
+class Car{
+    public static void main(String[] args) {
+        Info i = new Info("Java");
+        System.out.println(i);
+    }
+}

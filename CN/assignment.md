@@ -233,6 +233,8 @@ DISADVANTAGES OF COMBINING THE SESSION, PRESENTATION, ANDAPPLICATION LAYER
 
 IN KUROSE 7th Edition Unit 1 Review 16-20
 
+![](2023-04-25-05-47-52.png)
+
 ## 19. We need to use synchronous TDM and combine 20 digital sources, each of 100 Kbps. Each output slot carries 1 bit from each digital source, but one extra bit is added to each frame for synchronization. Answer the following questions
 
 a. What is the size of an output frame in bits?  
@@ -369,3 +371,7 @@ control so A can pump out the segments back to back and continuously.
 
 22, 23, 24 - KUROSE 7th UNIT 2. P 4,5,6
 25 - UNIT 3. P 26
+
+![](2023-04-25-05-49-00.png)
+![](2023-04-25-05-49-15.png)
+![](2023-04-25-05-49-22.png)

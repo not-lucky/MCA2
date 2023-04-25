@@ -90,3 +90,29 @@ Host B sends to Host A, what will be the acknowledgment number?
 a) 20 bytes
 b) ack number = 90
 ```
+
+## End Sem
+
+2. a
+
+![](2023-04-25-05-51-33.png)
+![](2023-04-25-05-51-54.png)
+
+2. b
+
+![](2023-04-25-05-52-49.png)
+![](2023-04-25-05-53-24.png)
+
+3. a. i
+
+```text
+Consider a reliable data transfer protocol that uses only negative acknowledg-
+ments. Suppose the sender sends data only infrequently. Would a NAK-only
+protocol be preferable to a protocol that uses ACKs? Why? Now suppose the
+sender has a lot of data to send and the end-to-end connection experiences
+few losses. In this second case, would a NAK-only protocol be preferable to
+a protocol that uses ACKs? Why?
+```
+
+![](2023-04-25-05-56-12.png)
+

@@ -75,12 +75,12 @@ There are two major roles within Service-oriented Architecture:
 
 Advantages of SOA:
 
-Service reusability
-Availability
-Scalability
-Reliability
-Easy maintenance
-Platform independent
+- Service reusability
+- Availability
+- Scalability
+- Reliability
+- Easy maintenance
+- Platform independent
 
 Applications:
 

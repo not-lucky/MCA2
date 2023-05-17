@@ -1,0 +1,19 @@
+import praw
+
+CLIENT_ID = "GoIz2y96OcSqQZNgpkokJQ"
+CLIENT_SECRET = "rNd0qZfhARk3irt2q9DZYWBhdJISZg"
+
+reddit = praw.Reddit(
+    client_id=CLIENT_ID,
+    client_secret=CLIENT_SECRET,
+    redirect_uri="http://localhost:8000",
+    user_agent="for duplicate account",
+)
+
+# You will need to authorize the application using the following line of code
+# It will redirect you to the Reddit authorization page where you will have to allow access to the application
+reddit.auth.url(["*"], "your_unique_state_string", "permanent")
+
+# Access saved posts
+for post in reddit.user.me().saved(limit=None):
+    print(post.title)

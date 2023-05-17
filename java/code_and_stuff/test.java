@@ -1,12 +1,9 @@
 import java.io.*;
-import java.util.Scanner;
-import java.lang.Math;
-import java.util.Random;
+import java.util.*;
 
 public class test {
-  public static void main(String[] args) throws IOException {
-    String a = "123456789";
-    char x[] = String.toCharArray(a);
-    for (char b: x) System.out.println(b);
+  public static void main(String[] args) {
+    Date d = new Date();
+    System.out.println(d);
   }
 }

@@ -1,0 +1,41 @@
+CREATE TABLE Emp AS SELECT * FROM hr.employees;
+CREATE TABLE Dept AS SELECT * FROM hr.departments;
+CREATE TABLE Loc AS SELECT * FROM hr.locations;
+
+
+
+
+SELECT e.employee_id, e.first_name || ' ' || e.last_name AS employee_name, e.department_id, d.department_name
+FROM emp e
+JOIN dept d ON e.department_id = d.department_id;
+
+
+
+SELECT e.last_name, e.department_id, d.department_name
+FROM emp e
+JOIN dept d ON e.department_id = d.department_id
+WHERE e.last_name = 'Smith';
+
+
+
+SELECT e.last_name, d.department_name, l.city
+FROM emp e
+JOIN dept d ON e.department_id = d.department_id
+JOIN loc l ON d.location_id = l.location_id
+WHERE e.salary > 2000;
+
+
+
+
+
+SELECT e.last_name, d.department_name
+FROM emp e
+JOIN dept d ON e.department_id = d.department_id
+WHERE e.last_name LIKE '%a%';
+
+
+
+SELECT e.last_name AS employee_lastname, e.employee_id AS emp_id, m.last_name AS manager_lastname, e.manager_id AS manager_id
+FROM emp e
+JOIN emp m ON e.manager_id = m.employee_id;
+

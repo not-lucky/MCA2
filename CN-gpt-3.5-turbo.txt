@@ -1,0 +1,15 @@
+quality
+playlist
+subtitles
+comments
+metadata (can embed)
+thumbnail
+skip if already downloaded
+continue when interrupted
+clean files (if interrupted)
+
+for fututr
+
+archive entire account
+auto upload to cloud
+encode to different format
